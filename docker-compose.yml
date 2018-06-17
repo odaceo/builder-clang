@@ -8,5 +8,5 @@ services:
       dockerfile: ../Dockerfile
       args:
         BUILDER_VERSION: ubuntu18
-        LLVM_VERSION: 6.0
+        LLVM_VERSION: '6.0'
     image: odaceo/clang:6.0-ubuntu18
