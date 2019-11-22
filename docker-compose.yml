@@ -2,11 +2,11 @@ version: '3'
 
 services:
 
-  6.0-ubuntu18:
+  8.0-ubuntu18:
     build:
       context: ./ubuntu-18
       dockerfile: ../Dockerfile
       args:
         BUILDER_VERSION: ubuntu18
-        LLVM_VERSION: '6.0'
-    image: odaceo/clang:6.0-ubuntu18
+        LLVM_VERSION: '8'
+    image: odaceo/clang:8.0-ubuntu18

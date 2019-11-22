@@ -5,6 +5,13 @@
 # Environment variables:
 # - LLVM_VERSION: the version to install
 
+# Install add-apt-repository command
+apt-get install software-properties-common
+
+# Add LLVM Ubuntu repository
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key | sudo apt-key add -
+add-apt-repository -u 'http://apt.llvm.org/bionic/ llvm-toolchain-bionic-9 main'
+
 # Update your local package index
 apt-get update
 
